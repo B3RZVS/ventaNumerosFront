@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 60vh;
     height: 95vh;
-    background-color: red;
+    background-color: white;
     display: flex;
     padding: 20px 0px 20px 0px;
     align-items: start;
@@ -12,11 +12,12 @@
 .contGeneral{
     width: 60vh;
     height: 95%;
-    background-color: black;
+    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-shadow: -10px 10px 0 #000;
 }
 
 .botonEncendido {
@@ -27,11 +28,13 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: red;
+
+    box-shadow: -5px 5px 0 #000;  
+    text-align: center;  
 }
 .contGeneral h1{
     height: 10vh;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     text-justify: auto;
     font-size: 1.5rem;
@@ -44,47 +47,102 @@
     justify-content: center;
     flex-direction: column;
     gap: 40px;
-    background-color: blue;
+    
 }
 .cantidad{
     width: 50%;
     height: 5vh;
-    background-color: white;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap:30%;
+    gap:20%;
     flex-grow: 1; 
+}
+.cantidad button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: -3px 3px 0 #000; 
+    transition: all 0.2s ease-in-out;
+}
+
+.cantidad button:active{
+    transform: scale(1.1);
+}
+
+.cantidad p{
+    font-size: 1.8rem;
+    text-shadow: -3px 3px 3px #000000;
+}
+
+.check{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.check input{
+    width: 20px;
+    height: 20px;
+
 }
 
 .botonAceptado{
     width: 50%;
+    min-height: 5vh;
     flex-grow: 1; 
+    border: 2px solid black;
+    box-shadow: -8px 8px 0 #000; 
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
 }
+.botonAceptado:active{
+    transform: rotate(5deg);
+}
+
 
 
 .rechazado{
     width: 100%;
-    height: 40vh;
-    background-color: blueviolet;
+    height: 25vh;
+    
     display: flex;
     align-items:center ;
     justify-content: center;
 }
+
 
 .botonRechazado{
     width: 50%;
-    height: 8vh;
+    height: 5vh;
+    border: 2px solid black;
+    box-shadow: -8px 8px 0 #000; 
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
 }
-
+.botonRechazado:active{
+    transform: rotate(5deg);
+}
 .resultados{
     width: 100%;
-    height: 20vh;
-    background-color: green;
+    height: 40vh;
+    
     display: flex;
     align-items:center ;
     justify-content: center;
+    flex-direction: column;
+}
+
+.resultados h1{
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    height: 2vh;
+    text-decoration: underline; 
 }
 
 @media (max-width:730px){
