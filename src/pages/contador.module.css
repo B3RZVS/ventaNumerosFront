@@ -1,0 +1,94 @@
+.contPrincipal{
+    width: 100%;
+    min-height: 60vh;
+    height: 95vh;
+    background-color: red;
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    align-items: start;
+    justify-content: center ;
+}
+
+.contGeneral{
+    width: 60vh;
+    height: 95%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botonEncendido {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+}
+.contGeneral h1{
+    height: 10vh;
+    color: white;
+    text-align: center;
+    text-justify: auto;
+    font-size: 1.5rem;
+}
+.aceptado{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    background-color: blue;
+}
+.cantidad{
+    width: 50%;
+    height: 5vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:30%;
+    flex-grow: 1; 
+}
+
+.botonAceptado{
+    width: 50%;
+    flex-grow: 1; 
+}
+
+
+.rechazado{
+    width: 100%;
+    height: 40vh;
+    background-color: blueviolet;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+.botonRechazado{
+    width: 50%;
+    height: 8vh;
+}
+
+.resultados{
+    width: 100%;
+    height: 20vh;
+    background-color: green;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+@media (max-width:730px){
+    .contGeneral{
+        width: 90%;
+    }
+}
