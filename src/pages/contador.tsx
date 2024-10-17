@@ -23,7 +23,7 @@ const Contador =()=>{
 
     //GET
     useEffect(()=>{
-        fetch('http://192.168.68.52:8000/ventas/oportunidades/')
+        fetch('https://ventanumerosback.onrender.com/ventas/oportunidades/')
         .then(response => {
             if (!response.ok) {
                 alert('error en el get');
@@ -51,7 +51,7 @@ const Post =(isAceptado: boolean)=>{
         'cantidad': cantidad,
         'empezoConNo':empezoConNo,
     }
-    fetch('http://192.168.68.52:8000/ventas/oportunidades/', {
+    fetch('https://ventanumerosback.onrender.com/ventas/oportunidades/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json', // Indica que estás enviando JSON
