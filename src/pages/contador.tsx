@@ -24,13 +24,7 @@ const Contador =()=>{
     //GET
     useEffect(()=>{
         console.log('Fetching data from:', '/ventas/oportunidades/');
-        fetch('/ventas/oportunidades/', {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'application/json',
-              // Agrega otros encabezados si es necesario
-            },
-          })            
+        fetch('/ventas/oportunidades/')            
         .then(response => {
             if (!response.ok) {
                 alert('error en el get');
