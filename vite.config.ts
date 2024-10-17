@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0', // Esto permite que el servidor escuche en todas las interfaces de red
-    port: 3000, // Cambia esto según el puerto que desees
+    port: Number(process.env.PORT) || 3000, // Cambia esto según el puerto que desees
   },
 })
