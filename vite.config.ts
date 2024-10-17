@@ -7,13 +7,5 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // Esto permite que el servidor escuche en todas las interfaces de red
     port: Number(process.env.PORT) || 3000, // Cambia esto según el puerto que desees
-  
-  proxy: {
-    '/ventas/oportunidades': {
-      target: 'https://ventanumerosback.onrender.com',
-      changeOrigin: true,
-      secure: true, // Asegúrate de que se establezca la conexión HTTPS
-    },
-  },
  }
 })
