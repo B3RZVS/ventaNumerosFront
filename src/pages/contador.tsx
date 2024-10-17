@@ -23,7 +23,8 @@ const Contador =()=>{
 
     //GET
     useEffect(()=>{
-        fetch('https://ventanumerosback.onrender.com/ventas/oportunidades/', {
+        console.log('Fetching data from:', '/ventas/oportunidades/');
+        fetch('/ventas/oportunidades/', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -57,7 +58,7 @@ const Post =(isAceptado: boolean)=>{
         'cantidad': cantidad,
         'empezoConNo':empezoConNo,
     }
-    fetch('https://ventanumerosback.onrender.com/ventas/oportunidades/', {
+    fetch('/ventas/oportunidades/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json', // Indica que estás enviando JSON
