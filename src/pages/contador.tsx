@@ -23,7 +23,13 @@ const Contador =()=>{
 
     //GET
     useEffect(()=>{
-        fetch('https://ventanumerosback.onrender.com/ventas/oportunidades/')
+        fetch('https://ventanumerosback.onrender.com/ventas/oportunidades/', {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json',
+              // Agrega otros encabezados si es necesario
+            },
+          })            
         .then(response => {
             if (!response.ok) {
                 alert('error en el get');
